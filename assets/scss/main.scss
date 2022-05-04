@@ -1,0 +1,281 @@
+@import "_generals.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+// sass --watch assets/scss/main.scss assets/css/style.css
+// Header==============================
+header {
+    padding: 0 3%;
+    nav {
+        position: fixed;
+        width: 95%;
+        padding: 4vh 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 40px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+            li:nth-of-type(1) {
+                padding-right: 30px;
+            }
+            li:nth-of-type(5) {
+                padding-left: 30px;
+            }
+            a {
+                text-decoration: none;
+                padding: 3px;
+                transition: ease 0.5s;
+            }
+            a:hover {
+                // text-decoration: underline;
+                border-bottom: solid 1px #fff;
+                color: #ebccc2;
+                transition: ease 0.5s;
+            }
+        }
+    }
+    h1 {
+        padding: 30vh 45% 10vh 20%;
+    }
+    div {
+        padding: 10vh 3%;
+    }
+}
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 300px;
+    nav {
+        padding-left: 4rem;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
+
+.about {
+    padding: 15vh 10% 15vh 10%;
+    display: flex;
+    align-items: center;
+    article {
+        padding: 0 0 0 8%;
+        h2 {
+            margin-bottom: 5vh;
+        }
+    }
+}
+
+// Seite2===================
+.lounger,
+.experience {
+    padding: 0 3% 0 0;
+    display: flex;
+    align-items: center;
+    img {
+        width: 57%;
+        height: 100vh;
+    }
+    article {
+        padding: 5vh 5% 0 5%;
+        h2 {
+            margin-bottom: 10vh;
+        }
+    }
+}
+
+// Seite3===================
+.inspiration {
+    padding: 20vh 20% 5vh 20%;
+    .video {
+        text-align: center;
+        video {
+            width: 90%;
+            height: 60vh;
+        }
+    }
+    article {
+        padding: 10vh 0 5vh 0;
+        h2 {
+            padding: 3vh 0;
+        }
+        .btn-list ul {
+            display: flex;
+            list-style: none;
+            li {
+                margin-right: 1%;
+                a {
+                    border: #ebccc2 solid 1px;
+                    padding: 0.5rem 2rem;
+                    box-shadow: 1px 1px 3px #ebccc2;
+                }
+                a:hover {
+                    background-color: #ebccc2;
+                    color: #2e2e2e;
+                    box-shadow: 1px 1px 3px #2e2e2e;
+                }
+            }
+        }
+    }
+    .alchemy,
+    .architecture {
+        padding: 0 5% 0 5%;
+        display: flex;
+        align-items: center;
+        article {
+            padding: 1vh 1% 0 3%;
+            h2 {
+                margin-bottom: 2vh;
+            }
+        }
+        img {
+            width: 50%;
+        }
+    }
+}
+
+// Seite4===================
+.shop {
+    padding: 0 3% 0 0;
+    display: flex;
+    align-items: center;
+    img {
+        width: 57%;
+        height: 100vh;
+    }
+    article {
+        padding: 5vh 0 0 0;
+        margin: 0 auto;
+        text-align: center;
+        img {
+            width: 100%;
+            height: 50vh;
+        }
+        h2 {
+            margin-bottom: 5vh;
+        }
+        a {
+            border: #ebccc2 solid 1px;
+            padding: 0.8rem 2.2rem;
+            background-color: #ebccc2;
+            color: #2e2e2e;
+        }
+        a:hover {
+            color: #2e2e2e;
+        }
+    }
+}
+
+// Seite5===================
+.register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+    img {
+        width: 50%;
+        height: 70%;
+    }
+    .form {
+        border: #ebccc2 solid 1px;
+        border-radius: 20px;
+        padding: 3vh 3%;
+        color: #ebccc2;
+        background-color: rgb(115, 115, 115);
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            margin-bottom: 2vh;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            label {
+                padding: 5px;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+            input {
+                width: 20vw;
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                font-size: 1.3rem;
+                margin-bottom: 1vh;
+            }
+            input[name="submit"] {
+                margin: 2vh auto;
+                width: 20vw;
+                background-color: #ebccc2;
+                border: none;
+                color: #2e2e2e;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+        a {
+            color: #fff;
+        }
+    }
+}
+
+// nav {
+//     @include flexit;
+//     // display: flex;
+//     // justify-content: space-between;
+//     // align-items: center;
+//     h1 {
+//         // font-size: 2rem;
+//         font-size: $medium;
+//     }
+//     ul {
+//         @include flexit;
+//         // display: flex;
+//         // justify-content: space-between;
+//         // align-items: center;
+//         li {
+//             list-style: none;
+//             margin-right: 10px;
+//             a {
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+// }
+// .card {
+//     margin: 100px 0;
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 20px;
+//     .card-image {
+//         width: 100%;
+//     }
+//     .card-title {
+//         color: $main-color;
+//     }
+//     p {
+//         color: $secondary-color;
+//     }
+//     figure {
+//         background-color: lightgrey;
+//         &:nth-of-type(2) h2 {
+//             color: gold;
+//         }
+//         &:hover {
+//             box-shadow: 0 0 10px #000;
+//         }
+//     }
+// }
+// article h3 {
+//     @include styletext(32px, 400, pink, "", uppercase, #000)
+// }

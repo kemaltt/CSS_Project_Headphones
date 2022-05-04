@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+/* font-family: 'Work Sans', sans-serif;
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #2e2e2e;
+}
+
+h1 {
+  color: #ebccc2;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #ebccc2;
+  font-weight: 400;
+}
+
+h3 {
+  color: #ebccc2;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #867772;
+  margin: 2vh 0;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+a {
+  color: #867772;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.aside-img {
+  width: 40%;
+}
+
+header {
+  padding: 0 3%;
+}
+header nav {
+  position: fixed;
+  width: 95%;
+  padding: 4vh 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  width: 40px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+header nav ul li:nth-of-type(1) {
+  padding-right: 30px;
+}
+header nav ul li:nth-of-type(5) {
+  padding-left: 30px;
+}
+header nav ul a {
+  text-decoration: none;
+  padding: 3px;
+  transition: ease 0.5s;
+}
+header nav ul a:hover {
+  border-bottom: solid 1px #fff;
+  color: #ebccc2;
+  transition: ease 0.5s;
+}
+header h1 {
+  padding: 30vh 45% 10vh 20%;
+}
+header div {
+  padding: 10vh 3%;
+}
+
+aside {
+  position: fixed;
+  left: 0;
+  top: 300px;
+}
+aside nav {
+  padding-left: 4rem;
+}
+aside nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about {
+  padding: 15vh 10% 15vh 10%;
+  display: flex;
+  align-items: center;
+}
+.about article {
+  padding: 0 0 0 8%;
+}
+.about article h2 {
+  margin-bottom: 5vh;
+}
+
+.lounger,
+.experience {
+  padding: 0 3% 0 0;
+  display: flex;
+  align-items: center;
+}
+.lounger img,
+.experience img {
+  width: 57%;
+  height: 100vh;
+}
+.lounger article,
+.experience article {
+  padding: 5vh 5% 0 5%;
+}
+.lounger article h2,
+.experience article h2 {
+  margin-bottom: 10vh;
+}
+
+.inspiration {
+  padding: 20vh 20% 5vh 20%;
+}
+.inspiration .video {
+  text-align: center;
+}
+.inspiration .video video {
+  width: 90%;
+  height: 60vh;
+}
+.inspiration article {
+  padding: 10vh 0 5vh 0;
+}
+.inspiration article h2 {
+  padding: 3vh 0;
+}
+.inspiration article .btn-list ul {
+  display: flex;
+  list-style: none;
+}
+.inspiration article .btn-list ul li {
+  margin-right: 1%;
+}
+.inspiration article .btn-list ul li a {
+  border: #ebccc2 solid 1px;
+  padding: 0.5rem 2rem;
+  box-shadow: 1px 1px 3px #ebccc2;
+}
+.inspiration article .btn-list ul li a:hover {
+  background-color: #ebccc2;
+  color: #2e2e2e;
+  box-shadow: 1px 1px 3px #2e2e2e;
+}
+.inspiration .alchemy,
+.inspiration .architecture {
+  padding: 0 5% 0 5%;
+  display: flex;
+  align-items: center;
+}
+.inspiration .alchemy article,
+.inspiration .architecture article {
+  padding: 1vh 1% 0 3%;
+}
+.inspiration .alchemy article h2,
+.inspiration .architecture article h2 {
+  margin-bottom: 2vh;
+}
+.inspiration .alchemy img,
+.inspiration .architecture img {
+  width: 50%;
+}
+
+.shop {
+  padding: 0 3% 0 0;
+  display: flex;
+  align-items: center;
+}
+.shop img {
+  width: 57%;
+  height: 100vh;
+}
+.shop article {
+  padding: 5vh 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.shop article img {
+  width: 100%;
+  height: 50vh;
+}
+.shop article h2 {
+  margin-bottom: 5vh;
+}
+.shop article a {
+  border: #ebccc2 solid 1px;
+  padding: 0.8rem 2.2rem;
+  background-color: #ebccc2;
+  color: #2e2e2e;
+}
+.shop article a:hover {
+  color: #2e2e2e;
+}
+
+.register {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8vh;
+}
+.register img {
+  width: 50%;
+  height: 70%;
+}
+.register .form {
+  border: #ebccc2 solid 1px;
+  border-radius: 20px;
+  padding: 3vh 3%;
+  color: #ebccc2;
+  background-color: rgb(115, 115, 115);
+}
+.register .form h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 2vh;
+}
+.register .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.register .form form label {
+  padding: 5px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.register .form form input {
+  width: 20vw;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1.3rem;
+  margin-bottom: 1vh;
+}
+.register .form form input[name=submit] {
+  margin: 2vh auto;
+  width: 20vw;
+  background-color: #ebccc2;
+  border: none;
+  color: #2e2e2e;
+  padding: 10px;
+  border-radius: 10px;
+}
+.register .form a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
