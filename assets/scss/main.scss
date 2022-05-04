@@ -51,14 +51,44 @@ header {
 aside {
     position: fixed;
     left: 0;
-    top: 250px;
+    top: 200px;
     nav {
-        padding-left: 4rem;
+        padding-left: 8rem;
         ul {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 5px;
+            .nav-list {
+                div {
+                    position: relative;
+                    margin: 0 35px 0 35px;
+                    padding: 10px;
+                    border: 1px solid #ebccc2;
+                    border-radius: 50%;
+                    right: 70px;
+                    top: 20px;
+                }
+                a:hover {
+                    color: #ebccc2;
+                    transition: ease 0.5s;
+                }
+                div::before {
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: 50%;
+                    padding: 15px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .nav-line {
+                padding: 3vh 0;
+                border-left: 1px solid #ebccc2;
+                margin: 5px 0 -20px -25px;
+            }
         }
     }
 }
@@ -221,6 +251,11 @@ aside {
                 color: #2e2e2e;
                 padding: 10px;
                 border-radius: 10px;
+                &:hover {
+                    cursor: pointer;
+                    color: #ebccc2;
+                    background-color: green;
+                }
             }
         }
         a {
