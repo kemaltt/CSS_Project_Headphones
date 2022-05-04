@@ -122,6 +122,11 @@ aside {
     padding: 20vh 20% 5vh 20%;
     .video {
         text-align: center;
+        iframe {
+            width: 90%;
+            height: 60vh;
+            border: none;
+        }
         video {
             width: 90%;
             height: 60vh;
@@ -324,6 +329,11 @@ aside {
         padding: 10vh 0;
         .video {
             text-align: center;
+            iframe {
+                width: 90%;
+                height: 36vh;
+                border: none;
+            }
         }
         article {
             text-align: center;

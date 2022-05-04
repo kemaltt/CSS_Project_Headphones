@@ -185,6 +185,11 @@ aside nav ul .nav-line {
 .inspiration .video {
   text-align: center;
 }
+.inspiration .video iframe {
+  width: 90%;
+  height: 60vh;
+  border: none;
+}
 .inspiration .video video {
   width: 90%;
   height: 60vh;
@@ -401,6 +406,11 @@ aside nav ul .nav-line {
   }
   .inspiration .video {
     text-align: center;
+  }
+  .inspiration .video iframe {
+    width: 90%;
+    height: 36vh;
+    border: none;
   }
   .inspiration article {
     text-align: center;
