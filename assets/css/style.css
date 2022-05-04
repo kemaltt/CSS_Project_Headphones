@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap");
 /* font-family: 'Work Sans', sans-serif;
 Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
 
@@ -37,7 +37,7 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #867772;
   margin: 2vh 0;
   line-height: 25px;
@@ -47,7 +47,7 @@ p {
 a {
   color: #867772;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 ul {
@@ -80,7 +80,6 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
   gap: 10px;
 }
 header nav ul li:nth-of-type(1) {
@@ -90,7 +89,6 @@ header nav ul li:nth-of-type(5) {
   padding-left: 30px;
 }
 header nav ul a {
-  text-decoration: none;
   padding: 3px;
   transition: ease 0.5s;
 }
@@ -112,45 +110,46 @@ aside {
   top: 200px;
 }
 aside nav {
-  padding-left: 8rem;
+  padding-left: 6rem;
 }
 aside nav ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
-aside nav ul .nav-list div {
   position: relative;
-  margin: 0 35px 0 35px;
-  padding: 10px;
+}
+aside nav ul .nav-list span {
+  position: relative;
+  padding: 2px 8px;
   border: 1px solid #ebccc2;
   border-radius: 50%;
-  right: 70px;
-  top: 20px;
+  right: 28px;
+  bottom: 2px;
 }
 aside nav ul .nav-list a:hover {
   color: #ebccc2;
   transition: ease 0.5s;
+  font-size: 2rem;
 }
-aside nav ul .nav-list div::before {
+aside nav ul .nav-list span::before {
   position: absolute;
   content: "";
   top: 50%;
   left: 50%;
-  padding: 15px;
+  padding: 12px;
   border: 1px solid #fff;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 aside nav ul .nav-line {
+  position: relative;
+  right: 20px;
   padding: 3vh 0;
   border-left: 1px solid #ebccc2;
-  margin: 5px 0 -20px -25px;
 }
 
 .about {
-  padding: 15vh 10% 15vh 10%;
+  padding: 15vh 8% 15vh 13%;
   display: flex;
   align-items: center;
 }
@@ -199,7 +198,7 @@ aside nav ul .nav-line {
 }
 .inspiration article .btn-list ul {
   display: flex;
-  list-style: none;
+  align-items: center;
 }
 .inspiration article .btn-list ul li {
   margin-right: 1%;
@@ -264,39 +263,39 @@ aside nav ul .nav-line {
   color: #2e2e2e;
 }
 
-.register {
+.contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 8vh;
+  padding: 15vh 0 0 5%;
 }
-.register img {
+.contact img {
   width: 50%;
   height: 70%;
 }
-.register .form {
+.contact .form {
   border: #ebccc2 solid 1px;
   border-radius: 20px;
-  padding: 3vh 3%;
+  padding: 3vh 1%;
   color: #ebccc2;
   background-color: rgb(115, 115, 115);
 }
-.register .form h1 {
+.contact .form h1 {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 2vh;
 }
-.register .form form {
+.contact .form form {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.register .form form label {
+.contact .form form label {
   padding: 5px;
   font-size: 2rem;
   font-weight: 400;
 }
-.register .form form input {
+.contact .form form input {
   width: 20vw;
   border: none;
   border-radius: 5px;
@@ -304,7 +303,7 @@ aside nav ul .nav-line {
   font-size: 1.3rem;
   margin-bottom: 1vh;
 }
-.register .form form input[name=submit] {
+.contact .form form input[name=submit] {
   margin: 2vh auto;
   width: 20vw;
   background-color: #ebccc2;
@@ -313,13 +312,10 @@ aside nav ul .nav-line {
   padding: 10px;
   border-radius: 10px;
 }
-.register .form form input[name=submit]:hover {
+.contact .form form input[name=submit]:hover {
   cursor: pointer;
   color: #ebccc2;
   background-color: green;
-}
-.register .form a {
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,17 +9,12 @@ header {
         position: fixed;
         width: 95%;
         padding: 4vh 2%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between;
         img {
             width: 40px;
         }
         ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style: none;
+            @include flex-around;
             gap: 10px;
             li:nth-of-type(1) {
                 padding-right: 30px;
@@ -28,14 +23,13 @@ header {
                 padding-left: 30px;
             }
             a {
-                text-decoration: none;
                 padding: 3px;
                 transition: ease 0.5s;
             }
             a:hover {
                 // text-decoration: underline;
                 border-bottom: solid 1px #fff;
-                color: #ebccc2;
+                color: $main-color;
                 transition: ease 0.5s;
             }
         }
@@ -53,50 +47,50 @@ aside {
     left: 0;
     top: 200px;
     nav {
-        padding-left: 8rem;
+        padding-left: 6rem;
         ul {
-            list-style: none;
             display: flex;
             flex-direction: column;
             gap: 5px;
+            position: relative;
             .nav-list {
-                div {
+                span {
                     position: relative;
-                    margin: 0 35px 0 35px;
-                    padding: 10px;
-                    border: 1px solid #ebccc2;
+                    padding: 2px 8px;
+                    border: 1px solid $main-color;
                     border-radius: 50%;
-                    right: 70px;
-                    top: 20px;
+                    right: 28px;
+                    bottom: 2px;
                 }
                 a:hover {
-                    color: #ebccc2;
+                    color: $main-color;
                     transition: ease 0.5s;
+                    font-size: 2rem;
                 }
-                div::before {
+                span::before {
                     position: absolute;
                     content: '';
                     top: 50%;
                     left: 50%;
-                    padding: 15px;
+                    padding: 12px;
                     border: 1px solid #fff;
                     border-radius: 50%;
                     transform: translate(-50%, -50%);
                 }
             }
             .nav-line {
+                position: relative;
+                right: 20px;
                 padding: 3vh 0;
-                border-left: 1px solid #ebccc2;
-                margin: 5px 0 -20px -25px;
+                border-left: 1px solid $main-color;
             }
         }
     }
 }
 
 .about {
-    padding: 15vh 10% 15vh 10%;
-    display: flex;
-    align-items: center;
+    padding: 15vh 8% 15vh 13%;
+    @include flex-center;
     article {
         padding: 0 0 0 8%;
         h2 {
@@ -109,8 +103,7 @@ aside {
 .lounger,
 .experience {
     padding: 0 3% 0 0;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     img {
         width: 57%;
         height: 100vh;
@@ -139,19 +132,18 @@ aside {
             padding: 3vh 0;
         }
         .btn-list ul {
-            display: flex;
-            list-style: none;
+            @include flex-center;
             li {
                 margin-right: 1%;
                 a {
-                    border: #ebccc2 solid 1px;
+                    border: $main-color solid 1px;
                     padding: 0.5rem 2rem;
-                    box-shadow: 1px 1px 3px #ebccc2;
+                    box-shadow: 1px 1px 3px $main-color;
                 }
                 a:hover {
-                    background-color: #ebccc2;
-                    color: #2e2e2e;
-                    box-shadow: 1px 1px 3px #2e2e2e;
+                    background-color: $main-color;
+                    color: $secondary-color;
+                    box-shadow: 1px 1px 3px $secondary-color;
                 }
             }
         }
@@ -159,8 +151,7 @@ aside {
     .alchemy,
     .architecture {
         padding: 0 5% 0 5%;
-        display: flex;
-        align-items: center;
+        @include flex-center;
         article {
             padding: 1vh 1% 0 3%;
             h2 {
@@ -176,8 +167,7 @@ aside {
 // Seite4===================
 .shop {
     padding: 0 3% 0 0;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     img {
         width: 57%;
         height: 100vh;
@@ -194,32 +184,30 @@ aside {
             margin-bottom: 5vh;
         }
         a {
-            border: #ebccc2 solid 1px;
+            border: $main-color solid 1px;
             padding: 0.8rem 2.2rem;
-            background-color: #ebccc2;
-            color: #2e2e2e;
+            background-color: $main-color;
+            color: $secondary-color;
         }
         a:hover {
-            color: #2e2e2e;
+            color: $secondary-color;
         }
     }
 }
 
 // Seite5===================
-.register {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 8vh;
+.contact {
+    @include flex-evenly;
+    padding: 15vh 0 0 5%;
     img {
         width: 50%;
         height: 70%;
     }
     .form {
-        border: #ebccc2 solid 1px;
+        border: $main-color solid 1px;
         border-radius: 20px;
-        padding: 3vh 3%;
-        color: #ebccc2;
+        padding: 3vh 1%;
+        color: $main-color;
         background-color: rgb(115, 115, 115);
         h1 {
             text-align: center;
@@ -246,71 +234,17 @@ aside {
             input[name="submit"] {
                 margin: 2vh auto;
                 width: 20vw;
-                background-color: #ebccc2;
+                background-color: $main-color;
                 border: none;
-                color: #2e2e2e;
+                color: $secondary-color;
                 padding: 10px;
                 border-radius: 10px;
                 &:hover {
                     cursor: pointer;
-                    color: #ebccc2;
+                    color: $main-color;
                     background-color: green;
                 }
             }
         }
-        a {
-            color: #fff;
-        }
     }
 }
-
-// nav {
-//     @include flexit;
-//     // display: flex;
-//     // justify-content: space-between;
-//     // align-items: center;
-//     h1 {
-//         // font-size: 2rem;
-//         font-size: $medium;
-//     }
-//     ul {
-//         @include flexit;
-//         // display: flex;
-//         // justify-content: space-between;
-//         // align-items: center;
-//         li {
-//             list-style: none;
-//             margin-right: 10px;
-//             a {
-//                 text-decoration: none;
-//             }
-//         }
-//     }
-// }
-// .card {
-//     margin: 100px 0;
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     gap: 20px;
-//     .card-image {
-//         width: 100%;
-//     }
-//     .card-title {
-//         color: $main-color;
-//     }
-//     p {
-//         color: $secondary-color;
-//     }
-//     figure {
-//         background-color: lightgrey;
-//         &:nth-of-type(2) h2 {
-//             color: gold;
-//         }
-//         &:hover {
-//             box-shadow: 0 0 10px #000;
-//         }
-//     }
-// }
-// article h3 {
-//     @include styletext(32px, 400, pink, "", uppercase, #000)
-// }
