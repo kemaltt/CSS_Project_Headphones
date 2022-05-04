@@ -16,16 +16,13 @@
     align-items: center;
 }
 
-@mixin flex-center {
+@mixin flex-column {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-@mixin styletext($fs, $fw, $co, $td, $tt, $bg) {
-    font-size: $fs;
-    font-weight: $fw;
-    color: $co;
-    text-decoration: $td;
-    text-transform: $tt;
-    background-color: $bg;
+@mixin flex-center {
+    display: flex;
+    align-items: center;
 }

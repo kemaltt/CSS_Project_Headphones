@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap");
 /* font-family: 'Work Sans', sans-serif;
 Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
-
 */
 * {
   margin: 0;
@@ -316,6 +315,171 @@ aside nav ul .nav-line {
   cursor: pointer;
   color: #ebccc2;
   background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0 3%;
+  }
+  header nav {
+    position: fixed;
+    width: 95%;
+    padding: 4vh 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav img {
+    width: 40px;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  header nav ul a {
+    font-size: 1.2rem;
+  }
+  header h1 {
+    text-align: center;
+    padding: 15vh 3% 2vh 3%;
+  }
+  header div {
+    padding: 1vh 14%;
+  }
+
+  .about {
+    padding: 5vh 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about article {
+    padding-top: 3vh;
+  }
+  .about article h2 {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  aside {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 200px;
+  }
+  aside nav {
+    padding-right: 6rem;
+  }
+  aside nav ul {
+    position: relative;
+    transform: rotateY(180deg);
+  }
+  aside nav ul .nav-list a {
+    display: inline-block;
+    transform: rotateY(180deg);
+  }
+
+  .lounger,
+.experience {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lounger img,
+.experience img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .inspiration {
+    padding: 10vh 0;
+  }
+  .inspiration .video {
+    text-align: center;
+  }
+  .inspiration article {
+    text-align: center;
+    padding: 1vh 0;
+  }
+  .inspiration article h2 {
+    padding: 3vh 0;
+  }
+  .inspiration article .btn-list ul {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inspiration .alchemy,
+.inspiration .architecture {
+    padding: 2vh 5% 2vh 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inspiration .alchemy article,
+.inspiration .architecture article {
+    padding: 1vh 1% 0 1%;
+  }
+  .inspiration .alchemy article h2,
+.inspiration .architecture article h2 {
+    margin-bottom: 2vh;
+  }
+  .inspiration .alchemy article p,
+.inspiration .architecture article p {
+    text-align: justify;
+  }
+  .inspiration .alchemy img,
+.inspiration .architecture img {
+    width: 100%;
+  }
+  .inspiration .architecture {
+    transform: rotateX(180deg);
+  }
+  .inspiration .architecture article {
+    transform: rotateX(180deg);
+  }
+
+  .shop {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop img {
+    width: 100%;
+    height: 50vh;
+  }
+  .shop article {
+    padding: 2vh 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .shop article img {
+    width: 80%;
+    height: 20vh;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .contact img {
+    width: 100%;
+    height: 50vh;
+  }
+  .contact .form {
+    margin: 2vh 0;
+    width: 60%;
+    height: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

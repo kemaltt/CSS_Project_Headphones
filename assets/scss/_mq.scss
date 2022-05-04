@@ -1,0 +1,141 @@
+// @media only screen and (max-width: 600px) {
+//     header {
+//         padding: 0 3%;
+//         nav {
+//             position: fixed;
+//             width: 95%;
+//             padding: 4vh 2%;
+//             @include flex-between;
+//             img {
+//                 width: 40px;
+//             }
+//             ul {
+//                 @include flex-between;
+//                 gap: 5px;
+//                 a {
+//                     font-size: 1.2rem;
+//                 }
+//             }
+//         }
+//         h1 {
+//             text-align: center;
+//             padding: 15vh 3% 2vh 3%;
+//         }
+//         div {
+//             padding: 1vh 14%;
+//         }
+//     }
+//     .about {
+//         padding: 5vh 3%;
+//         display: flex;
+//         flex-direction: column;
+//         img {
+//             width: 100%;
+//         }
+//         article {
+//             padding-top: 3vh;
+//             h2 {
+//                 text-align: center;
+//                 margin-bottom: 3vh;
+//             }
+//         }
+//     }
+//     aside {
+//         z-index: 999;
+//         position: fixed;
+//         right: 0;
+//         top: 200px;
+//         nav {
+//             padding-right: 6rem;
+//             ul {
+//                 position: relative;
+//                 transform: rotateY(180deg);
+//                 .nav-list {
+//                     a {
+//                         display: inline-block;
+//                         transform: rotateY(180deg);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .lounger,
+//     .experience {
+//         padding: 0;
+//         @include flex-column;
+//         img {
+//             width: 100%;
+//             height: 50vh;
+//         }
+//     }
+//     .inspiration {
+//         padding: 10vh 0;
+//         .video {
+//             text-align: center;
+//         }
+//         article {
+//             text-align: center;
+//             padding: 1vh 0;
+//             h2 {
+//                 padding: 3vh 0;
+//             }
+//             .btn-list ul {
+//                 text-align: center;
+//                 @include flex-center;
+//                 justify-content: center;
+//             }
+//         }
+//         .alchemy,
+//         .architecture {
+//             padding: 2vh 5% 2vh 5%;
+//             @include flex-column;
+//             article {
+//                 padding: 1vh 1% 0 1%;
+//                 h2 {
+//                     margin-bottom: 2vh;
+//                 }
+//                 p {
+//                     text-align: justify;
+//                 }
+//             }
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//         .architecture {
+//             transform: rotateX(180deg);
+//             article {
+//                 transform: rotateX(180deg);
+//             }
+//         }
+//     }
+//     .shop {
+//         padding: 0;
+//         @include flex-column;
+//         img {
+//             width: 100%;
+//             height: 50vh;
+//         }
+//         article {
+//             padding: 2vh 0 0 0;
+//             margin: 0 auto;
+//             text-align: center;
+//             img {
+//                 width: 80%;
+//                 height: 20vh;
+//             }
+//             h2 {
+//                 margin-bottom: 5vh;
+//             }
+//             a {
+//                 border: $main-color solid 1px;
+//                 padding: 0.8rem 2.2rem;
+//                 background-color: $main-color;
+//                 color: $secondary-color;
+//             }
+//             a:hover {
+//                 color: $secondary-color;
+//             }
+//         }
+//     }
+// }
