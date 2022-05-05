@@ -362,6 +362,26 @@ aside nav ul .nav-line {
     font-size: xx-large;
     display: block;
     padding: 0;
+    cursor: pointer;
+  }
+  header nav .responsive {
+    position: relative;
+    top: 50px;
+    transition: ease 2s;
+    display: block;
+    width: 90%;
+    background-color: #fff;
+    padding: 1vh 2%;
+    border-radius: 10px;
+  }
+  header nav .responsive ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  header nav .responsive ul li {
+    padding: 5px;
   }
   header h1 {
     text-align: center;
@@ -506,6 +526,9 @@ aside nav ul .nav-line {
     margin: 2vh 0;
     width: 60%;
     height: 40%;
+  }
+  .contact .form form input {
+    width: 100%;
   }
 }
 
